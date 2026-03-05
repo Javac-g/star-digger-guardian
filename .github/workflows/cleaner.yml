@@ -1,0 +1,35 @@
+name: Star Digger Cleaner
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run scanner
+        run: python scan.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
+      - name: Commit changes
+        run: |
+          git config user.name "guardian-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add blocked-users.json
+          git commit -m "Update blocked users" || echo "No changes"
+          git push
