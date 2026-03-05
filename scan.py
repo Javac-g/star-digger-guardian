@@ -21,7 +21,7 @@ headers = {
 }
 
 # Broad keyword detection (robust)
-KEYWORDS = ["star", "repo", "follow", "back"]
+KEYWORDS = ["star","stars", "repo", "follow", "back"]
 
 
 def is_spam(bio):
