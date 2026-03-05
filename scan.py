@@ -16,24 +16,39 @@ SPAM_PATTERNS = [
     "star back",
     "follow for follow",
     "stars to my repositories",
-    "i will star your repo"
+    "i will star your repo",
+    "GIVE ME STARS TO MY REPOSITORIES AND BACK TO YOUR REPOSITORIES"
 ]
 
 def is_spam(bio):
     if not bio:
         return False
+
     bio = bio.lower()
-    score = 0
-    for pattern in SPAM_PATTERNS:
-        if pattern in bio:
-            score += 1
-    return score >= 1
+
+    keywords = ["star", "repo", "follow", "back"]
+
+    score = sum(1 for k in keywords if k in bio)
+
+    return score >= 2
 
 
 def get_followers():
-    url = f"https://api.github.com/users/{USERNAME}/followers"
-    return requests.get(url, headers=headers).json()
+    followers = []
+    page = 1
 
+    while True:
+        url = f"https://api.github.com/users/{USERNAME}/followers?per_page=100&page={page}"
+        response = requests.get(url, headers=headers)
+        data = response.json()
+
+        if not data:
+            break
+
+        followers.extend(data)
+        page += 1
+
+    return followers
 
 def get_user(login):
     url = f"https://api.github.com/users/{login}"
@@ -42,7 +57,8 @@ def get_user(login):
 
 def block_user(login):
     url = f"https://api.github.com/user/blocks/{login}"
-    requests.put(url, headers=headers)
+    r = requests.put(url, headers=headers)
+    print("Block status:", login, r.status_code, r.text)
 
 
 def load_blocked():
