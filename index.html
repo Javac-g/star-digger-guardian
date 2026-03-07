@@ -1,23 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blocked Star Diggers</title>
-</head>
-<body>
-  <h1>Blocked Star Diggers</h1>
-  <ul id="list"></ul>
+<meta charset="UTF-8">
+<title>Blocked Star Diggers</title>
 
-  <script>
-    fetch('blocked-users.json')
-      .then(res => res.json())
-      .then(data => {
-        const ul = document.getElementById('list');
-        data.forEach(user => {
-          const li = document.createElement('li');
-          li.textContent = user.login + " — blocked at " + user.blocked_at;
-          ul.appendChild(li);
-        });
-      });
-  </script>
+<style>
+
+body{
+    background:#1e1f22;
+    color:#c9d1d9;
+    font-family: Inter, system-ui, Arial;
+    margin:40px;
+}
+
+h1{
+    color:#ffffff;
+    font-weight:600;
+    margin-bottom:30px;
+}
+
+.container{
+    max-width:900px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#2b2d30;
+    border-radius:6px;
+    overflow:hidden;
+}
+
+th{
+    text-align:left;
+    padding:12px;
+    background:#313338;
+    color:#e6edf3;
+    font-weight:600;
+}
+
+td{
+    padding:12px;
+    border-top:1px solid #3c3f41;
+}
+
+tr:hover{
+    background:#383b40;
+}
+
+.username{
+    color:#58a6ff;
+}
+
+.time{
+    color:#8b949e;
+    font-size:13px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Blocked Star Diggers</h1>
+
+<table>
+<thead>
+<tr>
+<th>User</th>
+<th>Blocked At</th>
+</tr>
+</thead>
+
+<tbody id="list"></tbody>
+
+</table>
+
+</div>
+
+<script>
+
+fetch('blocked-users.json')
+.then(res => res.json())
+.then(data => {
+
+const tbody = document.getElementById('list');
+
+data.forEach(user => {
+
+const row = document.createElement('tr');
+
+row.innerHTML =
+`
+<td class="username">${user.login}</td>
+<td class="time">${user.blocked_at}</td>
+`;
+
+tbody.appendChild(row);
+
+});
+
+});
+
+</script>
+
 </body>
 </html>
