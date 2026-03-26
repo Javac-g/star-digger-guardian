@@ -30,5 +30,37 @@
   {
     "login": "COUNTRY-HUMANS",
     "blocked_at": "2026-03-25T06:28:18.659225"
+  },
+  {
+    "login": "venyholte",
+    "blocked_at": "2026-03-26T12:25:14.926689"
+  },
+  {
+    "login": "joehubers",
+    "blocked_at": "2026-03-26T12:25:16.088545"
+  },
+  {
+    "login": "yumeaika",
+    "blocked_at": "2026-03-26T12:25:17.405552"
+  },
+  {
+    "login": "senamorde",
+    "blocked_at": "2026-03-26T12:25:17.881619"
+  },
+  {
+    "login": "davidtoyle",
+    "blocked_at": "2026-03-26T12:25:19.416580"
+  },
+  {
+    "login": "viviwister",
+    "blocked_at": "2026-03-26T12:25:20.035852"
+  },
+  {
+    "login": "dionvolta",
+    "blocked_at": "2026-03-26T12:25:22.832631"
+  },
+  {
+    "login": "nuychen",
+    "blocked_at": "2026-03-26T12:25:24.589195"
   }
 ]
