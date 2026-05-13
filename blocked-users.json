@@ -90,5 +90,41 @@
   {
     "login": "stellawinter",
     "blocked_at": "2026-04-20T18:25:42.037984"
+  },
+  {
+    "login": "canestein",
+    "blocked_at": "2026-05-13T03:33:01.709089"
+  },
+  {
+    "login": "lynewinter",
+    "blocked_at": "2026-05-13T03:33:04.840474"
+  },
+  {
+    "login": "hazexone",
+    "blocked_at": "2026-05-13T03:33:05.837976"
+  },
+  {
+    "login": "domcomit",
+    "blocked_at": "2026-05-13T03:33:06.459990"
+  },
+  {
+    "login": "kylehyne",
+    "blocked_at": "2026-05-13T03:33:07.551021"
+  },
+  {
+    "login": "jaderytm",
+    "blocked_at": "2026-05-13T03:33:08.040866"
+  },
+  {
+    "login": "vierystein",
+    "blocked_at": "2026-05-13T03:33:09.321538"
+  },
+  {
+    "login": "hanyvert",
+    "blocked_at": "2026-05-13T03:33:11.635132"
+  },
+  {
+    "login": "mariwatts",
+    "blocked_at": "2026-05-13T03:33:15.836216"
   }
 ]
