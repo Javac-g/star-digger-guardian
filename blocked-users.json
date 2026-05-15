@@ -130,5 +130,45 @@
   {
     "login": "hidariako",
     "blocked_at": "2026-05-13T14:37:18.289516"
+  },
+  {
+    "login": "zunelyat",
+    "blocked_at": "2026-05-15T08:50:15.718461"
+  },
+  {
+    "login": "adindazu",
+    "blocked_at": "2026-05-15T08:50:19.328438"
+  },
+  {
+    "login": "hestiyak",
+    "blocked_at": "2026-05-15T08:50:19.716795"
+  },
+  {
+    "login": "jamesgeodi",
+    "blocked_at": "2026-05-15T08:50:20.095676"
+  },
+  {
+    "login": "olienath",
+    "blocked_at": "2026-05-15T08:50:20.486928"
+  },
+  {
+    "login": "viraweitse",
+    "blocked_at": "2026-05-15T08:50:20.853036"
+  },
+  {
+    "login": "yolenatch",
+    "blocked_at": "2026-05-15T08:50:21.189895"
+  },
+  {
+    "login": "jakerother",
+    "blocked_at": "2026-05-15T08:50:21.603074"
+  },
+  {
+    "login": "yupyanyo",
+    "blocked_at": "2026-05-15T08:50:22.047377"
+  },
+  {
+    "login": "zowilyhter",
+    "blocked_at": "2026-05-15T08:50:22.421453"
   }
 ]
