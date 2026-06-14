@@ -190,5 +190,29 @@
   {
     "login": "frenwinter",
     "blocked_at": "2026-06-13T18:35:00.617858"
+  },
+  {
+    "login": "devycyan",
+    "blocked_at": "2026-06-14T07:42:24.851311"
+  },
+  {
+    "login": "kerryjanes",
+    "blocked_at": "2026-06-14T07:42:25.153272"
+  },
+  {
+    "login": "hyuntayo",
+    "blocked_at": "2026-06-14T07:42:25.473544"
+  },
+  {
+    "login": "annaveth",
+    "blocked_at": "2026-06-14T07:42:25.959263"
+  },
+  {
+    "login": "canesterin",
+    "blocked_at": "2026-06-14T07:42:26.458160"
+  },
+  {
+    "login": "blegdor",
+    "blocked_at": "2026-06-14T07:42:26.876125"
   }
 ]
